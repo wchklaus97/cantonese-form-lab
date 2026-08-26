@@ -1,0 +1,13 @@
+# Local / ephemeral
+gauntlet-workbench.md
+.DS_Store
+
+# Sprite pipeline intermediates (regenerate from refs + scripts)
+sprite-pipeline/raw/
+sprite-pipeline/raw-f/
+sprite-pipeline/processed/
+sprite-pipeline/processed-f/
+sprite-pipeline/qc-full/
+sprite-pipeline/qc/
+sprite-pipeline/qc-critic-f/
+sprite-pipeline/guides/

@@ -1,0 +1,26 @@
+{
+  "name": "Form Lab",
+  "short_name": "Form Lab",
+  "description": "Cantonese / Chinese / English workout form cards with suggested kg and time.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#fff7fa",
+  "theme_color": "#ff7a9a",
+  "lang": "zh-Hant",
+  "icons": [
+    {
+      "src": "./public/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./public/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

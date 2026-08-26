@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Form Lab · 粵語動作姿勢指南</title>
+  <meta name="description" content="36 張粵語動作卡：建議重量、預計時間、進階對應姿勢。" />
+  <meta name="theme-color" content="#ff7a9a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Form Lab" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="icon" href="./public/icons/icon-192.png" />
+  <link rel="apple-touch-icon" href="./public/icons/icon-192.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Outfit:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="idol-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top">FORM LAB</a>
+    <nav class="nav">
+      <a href="#routines" data-i18n="navRoutines">訓練組</a>
+      <a href="#library" data-i18n="navLibrary">動作庫</a>
+      <a href="#notes" data-i18n="navNotes">注意</a>
+    </nav>
+    <div class="lang-switch" id="lang-switch" role="group" aria-label="語言"></div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="eyebrow">粵語姿勢指南 · 36 張完整步驟卡</p>
+        <h1>FORM LAB</h1>
+        <p class="lede" data-i18n="lede">睇清點樣做、建議公斤數、預計分鐘，同埋每招對應嘅進階姿勢。</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="#library" data-i18n="ctaLibrary">開始揀動作</a>
+          <a class="btn ghost" href="#routines" data-i18n="ctaRoutines">睇訓練組時間</a>
+        </div>
+        <p class="install-hint" data-i18n="installHint">可加入主畫面當 App 用</p>
+      </div>
+      <div class="hero-visual" aria-hidden="true"></div>
+    </section>
+
+    <section id="routines" class="section">
+      <div class="section-head">
+        <h2 data-i18n="routinesTitle">訓練組總覽</h2>
+        <p data-i18n="routinesDesc">每組估計時間含組間休息；重量為一般成人參考，因人而異。</p>
+      </div>
+      <div class="routine-grid" id="routine-grid"></div>
+    </section>
+
+    <section id="library" class="section">
+      <div class="section-head">
+        <h2 data-i18n="libraryTitle">動作庫</h2>
+        <p data-i18n="libraryDesc">撳卡睇完整步驟圖、建議 kg、時間同進階對應。</p>
+      </div>
+
+      <div class="filters" id="filters" role="group" aria-label="篩選"></div>
+      <div class="level-toggle" id="level-toggle" role="group" aria-label="重量等級"></div>
+      <div class="card-grid" id="card-grid"></div>
+    </section>
+
+    <section id="notes" class="section notes">
+      <div class="section-head">
+        <h2 data-i18n="notesTitle">使用注意</h2>
+      </div>
+      <ul class="note-list">
+        <li data-i18n="note1">建議公斤數係一般健身房成人參考區間，唔係硬性目標。</li>
+        <li data-i18n="note2">有關節痛、頭暈或血壓問題，先咨詢專業人士。</li>
+        <li data-i18n="note3">深蹲／臥推等建議有保護架或同伴。</li>
+        <li data-i18n="note4">進階對應係常見進程，唔一定要同一日做晒。</li>
+        <li data-i18n="note5">步驟卡圖片以粵語為主；介面可切換繁中粵語／簡中／英文。</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <strong>FORM LAB</strong>
+    <span data-i18n="footerTag">粵語動作姿勢指南</span>
+  </footer>
+
+  <dialog id="detail-modal" class="modal">
+    <button class="modal-close" type="button" aria-label="關閉">×</button>
+    <div class="modal-body" id="modal-body"></div>
+  </dialog>
+
+  <dialog id="lightbox" class="lightbox" aria-label="Fullscreen card">
+    <div class="lightbox-toolbar">
+      <button type="button" class="lightbox-btn" data-lightbox-fs aria-label="Browser fullscreen">⛶</button>
+      <button type="button" class="lightbox-btn" data-lightbox-close aria-label="關閉">×</button>
+    </div>
+    <img data-lightbox-img alt="" />
+    <p class="lightbox-hint" data-lightbox-hint></p>
+  </dialog>
+
+  <script src="./i18n.js"></script>
+  <script src="./data.js"></script>
+  <script src="./agent.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

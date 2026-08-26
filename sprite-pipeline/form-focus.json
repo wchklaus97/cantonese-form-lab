@@ -1,0 +1,230 @@
+{
+  "cellSize": 512,
+  "style": "clean HD 2D anime-inspired Form Agent, solid #FF00FF background, no text/labels/UI/arrows, sell the cue with pose + camera + lighting emphasis only",
+  "presets": {
+    "idle": {
+      "frames": 4,
+      "grid": [2, 2],
+      "view": "3/4 front",
+      "focus": "Tall stacked posture: ribs over pelvis, soft knee unlock, arms relaxed. Subtle breathing idle only.",
+      "mustShow": ["full body", "feet planted", "neutral spine"]
+    },
+    "curl-both": {
+      "frames": 6,
+      "grid": [2, 3],
+      "view": "3/4 front",
+      "focus": "Elbows pinned to ribs like hinges; only forearms move. Upper arms stay glued to torso.",
+      "mustShow": ["both dumbbells", "elbows fixed", "no shoulder swing"]
+    },
+    "curl-alt": {
+      "frames": 8,
+      "grid": [2, 4],
+      "view": "3/4 front",
+      "focus": "Strict alternating: one arm curls while the other stays locked long; torso does not rock.",
+      "mustShow": ["clear left/right phases", "elbows pinned", "no torso lean"]
+    },
+    "curl-seated": {
+      "frames": 6,
+      "grid": [2, 3],
+      "view": "3/4 front",
+      "focus": "Seated upright; elbows stay under shoulders against the torso; no hip drive off the bench.",
+      "mustShow": ["bench seat", "upright torso", "fixed elbows"]
+    },
+    "kickback": {
+      "frames": 6,
+      "grid": [2, 3],
+      "view": "side 3/4",
+      "focus": "Upper arm locked parallel to floor; only the forearm hinges. Elbow height never drops.",
+      "mustShow": ["hinge at elbow only", "flat back hinge stance", "dumbbell path"]
+    },
+    "dip": {
+      "frames": 8,
+      "grid": [2, 4],
+      "view": "side 3/4",
+      "focus": "Shoulders down and back; elbows track rearward (not flared wide); chest proud, no shrug.",
+      "mustShow": ["bench edge hands", "elbow path back", "upright chest"]
+    },
+    "oh-ext": {
+      "frames": 6,
+      "grid": [2, 3],
+      "view": "side 3/4",
+      "focus": "Upper arms stay vertical beside head; only forearms fold. Elbows point up, not forward.",
+      "mustShow": ["overhead elbows fixed", "ribs down", "single/double DB clear"]
+    },
+    "press-flat": {
+      "frames": 8,
+      "grid": [2, 4],
+      "view": "slight high 3/4",
+      "focus": "Wrists stacked over elbows; bar/DB path vertical over mid-chest; shoulder blades pinned to bench.",
+      "mustShow": ["flat bench", "scapulae set", "vertical press path"]
+    },
+    "press-incline": {
+      "frames": 8,
+      "grid": [2, 4],
+      "view": "side 3/4",
+      "focus": "Incline angle readable; press path slightly up/back over upper chest; no low flat-bench path.",
+      "mustShow": ["incline bench", "upper-chest line", "stable feet"]
+    },
+    "press-decline": {
+      "frames": 8,
+      "grid": [2, 4],
+      "view": "side 3/4",
+      "focus": "Decline angle readable; path over lower chest; hips secured, controlled lockout.",
+      "mustShow": ["decline bench", "lower-chest target", "secure hips"]
+    },
+    "press-floor": {
+      "frames": 6,
+      "grid": [2, 3],
+      "view": "3/4 front-high",
+      "focus": "Triceps stop when upper arms touch floor; no shoulder dump. Elbows ~45° from torso.",
+      "mustShow": ["floor contact of arms", "partial ROM stop", "neutral wrists"]
+    },
+    "press-squeeze": {
+      "frames": 8,
+      "grid": [2, 4],
+      "view": "3/4 front-high",
+      "focus": "Dumbbells pressed together the whole rep; constant inward squeeze through the lockout.",
+      "mustShow": ["DBs touching/near", "chest squeeze", "stable scapulae"]
+    },
+    "press-shoulder": {
+      "frames": 6,
+      "grid": [2, 3],
+      "view": "3/4 front",
+      "focus": "Ribs down, glutes under; press straight up (not forward). Elbows under wrists.",
+      "mustShow": ["vertical press", "no lower-back flare", "head neutral"]
+    },
+    "fly": {
+      "frames": 8,
+      "grid": [2, 4],
+      "view": "slight high 3/4",
+      "focus": "Soft elbow bend fixed; wide arc from open to hug; wrists above elbows, not a press.",
+      "mustShow": ["fixed elbow angle", "wide chest arc", "bench support"]
+    },
+    "pullover": {
+      "frames": 8,
+      "grid": [2, 4],
+      "view": "side",
+      "focus": "Shoulders stay packed; long arc from overhead to hips with soft elbows; ribs do not flare hard.",
+      "mustShow": ["side arc path", "hips on bench", "packed shoulders"]
+    },
+    "row-wide": {
+      "frames": 6,
+      "grid": [2, 3],
+      "view": "3/4 front",
+      "focus": "Pull elbows out wide toward lower chest; squeeze shoulder blades together at the peak.",
+      "mustShow": ["wide elbow flare", "scapular squeeze", "torso brace"]
+    },
+    "row-bent": {
+      "frames": 8,
+      "grid": [2, 4],
+      "view": "side",
+      "focus": "Hip hinge held flat-backed; bar/DB path to lower ribs; no standing up between reps.",
+      "mustShow": ["flat back hinge", "elbows past torso", "stable hip angle"]
+    },
+    "row-one": {
+      "frames": 6,
+      "grid": [2, 3],
+      "view": "side 3/4",
+      "focus": "Torso square to floor on bench support; elbow drives back close to body; no torso twist.",
+      "mustShow": ["one-arm DB", "bench support hand/knee", "elbow close path"]
+    },
+    "row-close": {
+      "frames": 6,
+      "grid": [2, 3],
+      "view": "3/4 front",
+      "focus": "Elbows tuck tight to ribs; pull to stomach; narrow grip readable.",
+      "mustShow": ["tucked elbows", "narrow handle/grip", "scapular retract"]
+    },
+    "row-incline": {
+      "frames": 6,
+      "grid": [2, 3],
+      "view": "side 3/4",
+      "focus": "Chest glued to incline pad; pull without yanking torso off the pad.",
+      "mustShow": ["chest on pad", "elbow drive back", "neutral neck"]
+    },
+    "row-squeeze": {
+      "frames": 8,
+      "grid": [2, 4],
+      "view": "3/4 rear-side",
+      "focus": "Peak hold with hard scapular pinch; elbows behind torso plane briefly.",
+      "mustShow": ["scapular pinch", "peak contraction", "controlled lower"]
+    },
+    "row-seated": {
+      "frames": 6,
+      "grid": [2, 3],
+      "view": "side 3/4",
+      "focus": "Sit tall, pull handle to belly; torso barely rocks; squeeze mid-back at end.",
+      "mustShow": ["seated cable/machine cue", "upright torso", "elbows back"]
+    },
+    "leg-press": {
+      "frames": 8,
+      "grid": [2, 4],
+      "view": "side",
+      "focus": "Feet mid-platform; knees track over toes; lower until ~90° without pelvis tucking under.",
+      "mustShow": ["sled/platform", "knee tracking", "neutral pelvis"]
+    },
+    "leg-ext": {
+      "frames": 6,
+      "grid": [2, 3],
+      "view": "side 3/4",
+      "focus": "Hips planted in seat; full knee extension without hip popping up; controlled lower.",
+      "mustShow": ["seat hips glued", "shin pad contact", "full extension"]
+    },
+    "squat": {
+      "frames": 8,
+      "grid": [2, 4],
+      "view": "side 3/4",
+      "focus": "Hips back+down, knees track toes, torso braced; depth near parallel with heels down.",
+      "mustShow": ["heel contact", "knee tracking", "braced torso"]
+    },
+    "split-squat": {
+      "frames": 8,
+      "grid": [2, 4],
+      "view": "side",
+      "focus": "Front shin mostly vertical; back knee drops straight down; torso upright, no forward collapse.",
+      "mustShow": ["rear foot elevated or split stance", "vertical front shin", "upright torso"]
+    },
+    "pulldown": {
+      "frames": 8,
+      "grid": [2, 4],
+      "view": "3/4 front",
+      "focus": "Pull bar to upper chest; elbows drive down/back; slight lean only, no heavy swing.",
+      "mustShow": ["bar to chest", "lat engagement elbows", "controlled return"]
+    },
+    "pullup": {
+      "frames": 8,
+      "grid": [2, 4],
+      "view": "3/4 front",
+      "focus": "Dead hang to chin-over-bar; shoulders pack down before pull; no kipping.",
+      "mustShow": ["bar overhead grip", "chin clear bar", "packed shoulders"]
+    },
+    "rdl": {
+      "frames": 8,
+      "grid": [2, 4],
+      "view": "side",
+      "focus": "Soft knees fixed; hips shoot back; flat back from head to tail; bar stays close to legs.",
+      "mustShow": ["hip hinge", "flat back", "bar close to shins/thighs"]
+    },
+    "bridge": {
+      "frames": 6,
+      "grid": [2, 3],
+      "view": "side",
+      "focus": "Ribs down, posterior pelvic tilt; squeeze glutes at top; avoid over-arching lumbar.",
+      "mustShow": ["shoulders on floor", "hips drive up", "glute squeeze top"]
+    },
+    "rev-fly": {
+      "frames": 6,
+      "grid": [2, 3],
+      "view": "3/4 rear or incline face-down",
+      "focus": "Soft elbows; open arms wide in rear-delt plane; squeeze upper back, not shrugging traps.",
+      "mustShow": ["rear-delt arc", "soft elbows", "no trap shrug"]
+    },
+    "dead-bug": {
+      "frames": 8,
+      "grid": [2, 4],
+      "view": "side 3/4",
+      "focus": "Low back pressed to floor the whole time; opposite arm/leg extend slowly without arching.",
+      "mustShow": ["lumbar glued to floor", "contralateral limbs", "slow control"]
+    }
+  }
+}
