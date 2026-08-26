@@ -11,3 +11,5 @@ sprite-pipeline/qc-full/
 sprite-pipeline/qc/
 sprite-pipeline/qc-critic-f/
 sprite-pipeline/guides/
+.vercel
+.gstack/

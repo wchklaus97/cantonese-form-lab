@@ -157,7 +157,7 @@ window.FORM_LAB_AGENT = {
 
   svgMarkup() {
     return `<svg class="agent-svg" viewBox="0 0 200 260" aria-hidden="true">
-      <ellipse cx="100" cy="242" rx="58" ry="8" fill="rgba(232,93,4,0.22)"/>
+      <ellipse cx="100" cy="242" rx="58" ry="8" fill="rgba(196,69,50,0.28)"/>
       <g class="agent-root">
         <circle cx="100" cy="62" r="20" fill="#c4a574"/>
         <line x1="100" y1="82" x2="100" y2="150" stroke="#6b6560" stroke-width="14" stroke-linecap="round"/>
@@ -187,18 +187,18 @@ window.FORM_LAB_AGENT = {
           </div>
           <div class="agent-head-actions">
             <div class="agent-gender" role="group" data-agent-gender>
-              <button type="button" class="agent-gender-btn" data-gender="m" aria-pressed="${this.gender === "m"}">♂</button>
-              <button type="button" class="agent-gender-btn" data-gender="f" aria-pressed="${this.gender === "f"}">♀</button>
+              <button type="button" class="agent-gender-btn" data-gender="m" aria-pressed="${this.gender === "m"}"></button>
+              <button type="button" class="agent-gender-btn" data-gender="f" aria-pressed="${this.gender === "f"}"></button>
             </div>
-            <button type="button" class="agent-play" data-agent-toggle aria-pressed="true">⏸</button>
+            <button type="button" class="agent-play" data-agent-toggle aria-pressed="true"></button>
           </div>
         </div>
         <div class="agent-meta" data-agent-meta></div>
         <div class="agent-viewport playing" data-agent-view>
-          <div class="sprite-clip" data-sprite-clip hidden>
+          <div class="sprite-clip" data-sprite-clip>
             <img class="sprite-strip" data-sprite-strip alt="" draggable="false" />
           </div>
-          <div class="agent-svg-wrap" data-svg-fallback>${this.svgMarkup()}</div>
+          <div class="agent-svg-wrap" data-svg-fallback hidden>${this.svgMarkup()}</div>
         </div>
         <div class="agent-caption" data-agent-caption></div>
       </div>`;
@@ -255,14 +255,21 @@ window.FORM_LAB_AGENT = {
 
     const loadSheet = () => {
       this.stop();
+      const url = this.sheetFor(preset);
+      const currentSrc = strip.getAttribute("src");
+
+      if (currentSrc === url && strip.complete && strip.naturalWidth > 0) {
+        showSheet();
+        return;
+      }
+
       stage.dataset.mode = "loading";
       stage.dataset.gender = this.gender;
-      clip.hidden = true;
-      svgWrap.hidden = false;
+      clip.hidden = false;
+      svgWrap.hidden = true;
       delete strip.dataset.fellBack;
       frame = 0;
 
-      const url = this.sheetFor(preset);
       strip.onload = () => showSheet();
       strip.onerror = () => {
         const key = this.sheetAlias[preset] || preset;
@@ -277,14 +284,10 @@ window.FORM_LAB_AGENT = {
         stage.dataset.mode = "svg";
         this.stop();
       };
-      // bust cache-stuck onload when re-selecting same src
-      if (strip.getAttribute("src") === url) {
+      if (currentSrc === url) {
         strip.removeAttribute("src");
       }
       strip.src = url;
-      if (strip.complete && strip.naturalWidth > 0) {
-        showSheet();
-      }
     };
 
     stage.querySelectorAll("[data-gender]").forEach((btn) => {
