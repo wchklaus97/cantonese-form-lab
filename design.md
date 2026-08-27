@@ -245,3 +245,18 @@ Wordmark + tagline + current locale name. Quiet top line.
 - Decorative glassmorphism, holographic foil on exercise cards.
 - `h-screen` heroes and 88vh empty stages.
 - Generic “Elevate / Seamless / Unleash” copy. Speak like a gym 通告.
+
+## Repo structure
+
+Keep each source file under **~600 lines** so modules stay readable without a bundler.
+
+| Area | Path | Role |
+|------|------|------|
+| Entry | `js/main.js` | boot |
+| UI | `js/locale-ui.js`, `js/render-library.js`, `js/modal.js`, `js/bindings.js` | screens + interaction |
+| Shared | `js/state.js`, `js/i18n-helpers.js`, `js/helpers.js` | state + helpers |
+| Data | `data/routines.js`, `data/exercises/*.js` | one file per muscle group |
+| Styles | `css/*.css` | tokens → layout → components → agent |
+| Agent | `agent.js` | sprite player |
+
+When a file approaches 600 lines, split by responsibility—not by arbitrary line count.

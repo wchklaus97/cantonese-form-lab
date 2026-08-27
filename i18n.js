@@ -1,5 +1,5 @@
 /* Default locale: Traditional Chinese Cantonese (yue) */
-window.FORM_LAB_I18N = {
+export const FORM_LAB_I18N = {
   defaultLocale: "yue",
   locales: {
     yue: {

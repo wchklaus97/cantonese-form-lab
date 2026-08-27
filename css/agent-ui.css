@@ -1,0 +1,325 @@
+  --agent-cycle: 2s;
+  --agent-delay: 1s;
+  --agent-ease: ease-in-out;
+  --agent-frames: 6;
+  margin-top: 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sheet);
+  background: var(--bg-elev);
+  overflow: hidden;
+}
+
+.agent-stage-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.75rem 0.9rem 0.2rem;
+}
+
+.agent-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.agent-sub {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.agent-head-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-shrink: 0;
+}
+
+.agent-gender {
+  display: inline-flex;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-ctl);
+  overflow: hidden;
+  background: var(--bg-elev);
+}
+
+.agent-gender-btn {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+  min-width: 2.4rem;
+  min-height: 36px;
+}
+
+.agent-gender-btn[aria-pressed="true"] {
+  background: color-mix(in oklch, var(--chop) 16%, var(--bg-elev));
+  color: var(--ink);
+}
+
+.agent-play {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: var(--radius-ctl);
+  border: 1px solid var(--line);
+  background: var(--bg-elev);
+  color: var(--ink);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.agent-play:hover {
+  border-color: var(--chop);
+}
+
+.agent-viewport {
+  position: relative;
+  height: 250px;
+  display: grid;
+  place-items: center;
+}
+
+.agent-svg {
+  width: min(220px, 70%);
+  height: auto;
+  overflow: visible;
+  z-index: 2;
+}
+
+.agent-caption {
+  padding: 0 0.9rem 0.85rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.agent-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0.15rem 0.9rem 0.35rem;
+}
+
+.sprite-clip {
+  position: relative;
+  width: min(280px, 88%);
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: var(--radius-ctl);
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  z-index: 2;
+}
+
+.modal-body .sprite-strip,
+.sprite-strip {
+  display: block;
+  height: 100% !important;
+  width: auto;
+  min-height: 0 !important;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: fill !important;
+  object-position: left center;
+  transform: translateX(0);
+  will-change: transform;
+  user-select: none;
+  pointer-events: none;
+}
+
+.agent-svg-wrap {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.agent-viewport[data-mode="sheet"] .agent-svg-wrap,
+.agent-stage[data-mode="sheet"] .agent-svg-wrap[hidden],
+.agent-svg-wrap[hidden] {
+  display: none !important;
+}
+
+.agent-stage[data-mode="sheet"] .sprite-clip:not([hidden]) {
+  display: block;
+}
+
+.agent-stage[data-mode="loading"] .agent-svg-wrap,
+.agent-stage[data-mode="loading"] .agent-svg-wrap[hidden],
+.agent-stage[data-mode="sheet"] .agent-svg-wrap[hidden],
+.agent-svg-wrap[hidden] {
+  display: none !important;
+}
+
+.agent-stage[data-mode="svg"] .sprite-clip {
+  display: none !important;
+}
+
+.agent-stage[data-mode="loading"] .sprite-clip {
+  display: block;
+  background: linear-gradient(90deg, var(--bg) 0%, var(--bg-elev) 50%, var(--bg) 100%);
+  background-size: 200% 100%;
+  animation: sheet-wait 1.1s linear infinite;
+}
+
+@keyframes sheet-wait {
+  to { background-position: -200% 0; }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: var(--space-lg);
+  }
+
+  .hero-visual {
+    order: -1;
+    max-width: 22.5rem;
+    justify-self: start;
+  }
+
+  .hero h1 {
+    max-width: none;
+  }
+
+  .modal {
+    width: min(94vw, 520px);
+    max-height: calc(100dvh - 1.25rem);
+    margin: 0.6rem auto;
+  }
+
+  .modal-body {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-body > .card-frame {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: var(--bg-elev);
+    height: min(38vh, 280px);
+    min-height: 180px;
+    max-height: 38vh;
+  }
+
+  .modal-body > .card-frame > img {
+    height: 100%;
+    max-height: none;
+    min-height: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .site-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "brand lang"
+      "nav nav";
+    align-items: center;
+  }
+
+  .brand { grid-area: brand; }
+  .nav {
+    grid-area: nav;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 0.35rem 1rem;
+  }
+  .lang-switch {
+    grid-area: lang;
+    width: auto;
+    order: unset;
+  }
+  .lang-full { display: none; }
+  .lang-short { display: inline; }
+  .lang-btn {
+    min-width: 2.5rem;
+    padding: 0.4rem 0.55rem;
+  }
+
+  .routine-row {
+    grid-template-columns: 2.2rem minmax(0, 1fr);
+  }
+
+  .routine-meta {
+    grid-column: 2;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.8rem;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-locale {
+    margin-left: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .ex-card,
+  .agent-stage[data-mode="loading"] .sprite-clip {
+    animation: none;
+  }
+
+  .btn:hover,
+  .hero-visual:hover,
+  .ex-card:hover,
+  .routine-row:hover {
+    transform: none;
+  }
+}
+
+.agent-prop {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.prop-bench {
+  width: 120px;
+  height: 28px;
+  border-radius: 6px;
+  background: #2a2621;
+  border: 1px solid rgba(255, 159, 28, 0.35);
+  bottom: 42px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.prop-bar {
+  width: 14px;
+  height: 110px;
+  border-radius: 8px;
+  background: linear-gradient(#888, #444);
+  top: 36px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.agent-viewport .joint,
+.agent-viewport .arm,
+.agent-viewport .leg,
+.agent-viewport .elbow,
+.agent-viewport .knee,
+.agent-viewport .torso,
+.agent-viewport .hip,
+.agent-viewport .head,
+.agent-viewport .agent-root {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+/* paused = freeze animations */

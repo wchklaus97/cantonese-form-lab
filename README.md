@@ -25,8 +25,14 @@ python3 -m http.server 5173
 
 ## 結構
 
-- `index.html` / `styles.css` / `app.js` — UI
+**檔案上限：每個 `.js` / `.css` 約 600 行以內**（見 `design.md`）。
+
+- `index.html` — 頁面骨架
+- `js/main.js` — 入口（ES modules）
+- `js/` — UI 邏輯（locale、library、modal、bindings…）
+- `css/` — 樣式分檔（tokens、layout、library、modal、agent）
+- `data/` — 課表與動作資料（按肌群分檔）
 - `i18n.js` — 介面字串
-- `data.js` — 多語動作資料
+- `agent.js` — Form Agent sprite 引擎
 - `manifest.webmanifest` / `sw.js` — PWA
-- `public/cards/` — 步驟卡圖片
+- `public/cards/` — 步驟卡圖片（`thumbs/` 為列表縮圖）

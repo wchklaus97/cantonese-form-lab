@@ -1,0 +1,334 @@
+.agent-viewport:not(.playing) .agent-root,
+.agent-viewport:not(.playing) .agent-root * {
+  animation-play-state: paused !important;
+}
+
+/* show props by preset */
+.agent-stage[data-preset^="press"] .prop-bench,
+.agent-stage[data-preset="fly"] .prop-bench,
+.agent-stage[data-preset="pullover"] .prop-bench,
+.agent-stage[data-preset="curl-seated"] .prop-bench,
+.agent-stage[data-preset="dip"] .prop-bench,
+.agent-stage[data-preset="press-shoulder"] .prop-bench,
+.agent-stage[data-preset="row-incline"] .prop-bench {
+  opacity: 1;
+}
+
+.agent-stage[data-preset="pulldown"] .prop-bar,
+.agent-stage[data-preset="pullup"] .prop-bar {
+  opacity: 1;
+}
+
+/* base idle bob */
+@keyframes agent-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.agent-stage[data-preset="idle"] .agent-root {
+  animation: agent-bob var(--agent-cycle) var(--agent-ease) infinite;
+}
+
+/* CURL both */
+@keyframes curl-arm {
+  0%, 100% { transform: rotate(18deg); }
+  50% { transform: rotate(-55deg); }
+}
+.agent-stage[data-preset="curl-both"] .arm-l .elbow,
+.agent-stage[data-preset="curl-both"] .arm-r .elbow,
+.agent-stage[data-preset="curl-seated"] .arm-l .elbow,
+.agent-stage[data-preset="curl-seated"] .arm-r .elbow {
+  transform-origin: 0% 0%;
+  animation: curl-arm var(--agent-cycle) var(--agent-ease) infinite;
+}
+.agent-stage[data-preset="curl-seated"] .agent-root {
+  transform: translateY(18px) scale(0.92);
+}
+
+/* CURL alternating */
+.agent-stage[data-preset="curl-alt"] .arm-l .elbow {
+  transform-origin: 0% 0%;
+  animation: curl-arm var(--agent-cycle) var(--agent-ease) infinite;
+}
+.agent-stage[data-preset="curl-alt"] .arm-r .elbow {
+  transform-origin: 100% 0%;
+  animation: curl-arm var(--agent-cycle) var(--agent-ease) infinite var(--agent-delay);
+}
+
+/* kickback */
+@keyframes kick-fore {
+  0%, 100% { transform: rotate(70deg); }
+  50% { transform: rotate(0deg); }
+}
+@keyframes kick-torso {
+  0%, 100% { transform: rotate(28deg); }
+  50% { transform: rotate(32deg); }
+}
+.agent-stage[data-preset="kickback"] .torso {
+  transform-origin: 50% 100%;
+  animation: kick-torso var(--agent-cycle) var(--agent-ease) infinite;
+}
+.agent-stage[data-preset="kickback"] .arm-r .elbow {
+  transform-origin: 0% 0%;
+  animation: kick-fore var(--agent-cycle) var(--agent-ease) infinite;
+}
+.agent-stage[data-preset="kickback"] .arm-l {
+  opacity: 0.35;
+}
+
+/* dip */
+@keyframes dip-body {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(22px); }
+}
+@keyframes dip-arm {
+  0%, 100% { transform: rotate(-10deg); }
+  50% { transform: rotate(35deg); }
+}
+.agent-stage[data-preset="dip"] .agent-root {
+  animation: dip-body var(--agent-cycle) var(--agent-ease) infinite;
+}
+.agent-stage[data-preset="dip"] .arm-l,
+.agent-stage[data-preset="dip"] .arm-r {
+  animation: dip-arm var(--agent-cycle) var(--agent-ease) infinite;
+}
+.agent-stage[data-preset="dip"] .leg-l,
+.agent-stage[data-preset="dip"] .leg-r {
+  transform: rotate(-8deg);
+}
+
+/* overhead extension */
+@keyframes oh-elbow {
+  0%, 100% { transform: rotate(-20deg); }
+  50% { transform: rotate(55deg); }
+}
+.agent-stage[data-preset="oh-ext"] .arm-l,
+.agent-stage[data-preset="oh-ext"] .arm-r {
+  transform: rotate(-70deg);
+}
+.agent-stage[data-preset="oh-ext"] .arm-l .elbow,
+.agent-stage[data-preset="oh-ext"] .arm-r .elbow {
+  animation: oh-elbow var(--agent-cycle) var(--agent-ease) infinite;
+}
+
+/* presses — lying vibe via rotate root + arm pump */
+@keyframes press-arms {
+  0%, 100% { transform: rotate(-8deg) translateY(0); }
+  50% { transform: rotate(0deg) translateY(-18px); }
+}
+.agent-stage[data-preset="press-flat"] .agent-root,
+.agent-stage[data-preset="press-floor"] .agent-root,
+.agent-stage[data-preset="press-squeeze"] .agent-root {
+  transform: rotate(90deg) translate(20px, -10px) scale(0.85);
+}
+.agent-stage[data-preset="press-incline"] .agent-root {
+  transform: rotate(55deg) translate(10px, 0) scale(0.88);
+}
+.agent-stage[data-preset="press-decline"] .agent-root {
+  transform: rotate(110deg) translate(24px, -16px) scale(0.85);
+}
+.agent-stage[data-preset^="press-"] .arm-l,
+.agent-stage[data-preset^="press-"] .arm-r,
+.agent-stage[data-preset="press-shoulder"] .arm-l,
+.agent-stage[data-preset="press-shoulder"] .arm-r {
+  animation: press-arms var(--agent-cycle) var(--agent-ease) infinite;
+}
+.agent-stage[data-preset="press-squeeze"] .arm-l,
+.agent-stage[data-preset="press-squeeze"] .arm-r {
+  transform: translateX(8px);
+}
+.agent-stage[data-preset="press-shoulder"] .agent-root {
+  transform: translateY(12px);
+}
+
+/* fly */
+@keyframes fly-open {
+  0%, 100% { transform: rotate(-20deg); }
+  50% { transform: rotate(55deg); }
+}
+.agent-stage[data-preset="fly"] .agent-root,
+.agent-stage[data-preset="pullover"] .agent-root {
+  transform: rotate(90deg) translate(18px, -8px) scale(0.86);
+}
+.agent-stage[data-preset="fly"] .arm-l {
+  animation: fly-open var(--agent-cycle) var(--agent-ease) infinite;
+}
+.agent-stage[data-preset="fly"] .arm-r {
+  animation: fly-open var(--agent-cycle) var(--agent-ease) infinite;
+  animation-direction: reverse;
+}
+
+@keyframes pullover-arc {
+  0%, 100% { transform: rotate(-20deg); }
+  50% { transform: rotate(-95deg); }
+}
+.agent-stage[data-preset="pullover"] .arm-l,
+.agent-stage[data-preset="pullover"] .arm-r {
+  animation: pullover-arc var(--agent-cycle) var(--agent-ease) infinite;
+}
+
+/* rows */
+@keyframes row-pull {
+  0%, 100% { transform: rotate(25deg); }
+  50% { transform: rotate(-25deg); }
+}
+@keyframes row-hinge {
+  0%, 100% { transform: rotate(55deg); }
+  50% { transform: rotate(50deg); }
+}
+.agent-stage[data-preset="row-bent"] .torso,
+.agent-stage[data-preset="row-wide"] .torso,
+.agent-stage[data-preset="row-close"] .torso,
+.agent-stage[data-preset="row-squeeze"] .torso,
+.agent-stage[data-preset="row-one"] .torso,
+.agent-stage[data-preset="row-incline"] .torso,
+.agent-stage[data-preset="rev-fly"] .torso,
+.agent-stage[data-preset="rdl"] .torso {
+  transform-origin: 50% 100%;
+  animation: row-hinge var(--agent-cycle) var(--agent-ease) infinite;
+}
+.agent-stage[data-preset^="row-"] .arm-l,
+.agent-stage[data-preset^="row-"] .arm-r {
+  animation: row-pull var(--agent-cycle) var(--agent-ease) infinite;
+}
+.agent-stage[data-preset="row-one"] .arm-l {
+  opacity: 0.25;
+  animation: none;
+}
+.agent-stage[data-preset="row-wide"] .arm-l,
+.agent-stage[data-preset="row-wide"] .arm-r {
+  transform: rotate(20deg);
+}
+.agent-stage[data-preset="row-seated"] .agent-root {
+  transform: translateY(20px) scale(0.9);
+}
+.agent-stage[data-preset="row-seated"] .arm-l,
+.agent-stage[data-preset="row-seated"] .arm-r {
+  animation: row-pull var(--agent-cycle) var(--agent-ease) infinite;
+}
+
+@keyframes revfly {
+  0%, 100% { transform: rotate(15deg); }
+  50% { transform: rotate(-60deg); }
+}
+.agent-stage[data-preset="rev-fly"] .arm-l,
+.agent-stage[data-preset="rev-fly"] .arm-r {
+  animation: revfly var(--agent-cycle) var(--agent-ease) infinite;
+}
+
+/* pulldown / pullup */
+@keyframes pull-vert {
+  0%, 100% { transform: translateY(10px); }
+  50% { transform: translateY(-16px); }
+}
+@keyframes pull-arms {
+  0%, 100% { transform: rotate(-80deg); }
+  50% { transform: rotate(-20deg); }
+}
+.agent-stage[data-preset="pulldown"] .agent-root,
+.agent-stage[data-preset="pullup"] .agent-root {
+  animation: pull-vert var(--agent-cycle) var(--agent-ease) infinite;
+}
+.agent-stage[data-preset="pulldown"] .arm-l,
+.agent-stage[data-preset="pulldown"] .arm-r,
+.agent-stage[data-preset="pullup"] .arm-l,
+.agent-stage[data-preset="pullup"] .arm-r {
+  animation: pull-arms var(--agent-cycle) var(--agent-ease) infinite;
+}
+.agent-stage[data-preset="pullup"] .leg-l,
+.agent-stage[data-preset="pullup"] .leg-r {
+  transform: translateY(-8px);
+}
+
+/* squat family */
+@keyframes squat-down {
+  0%, 100% { transform: translateY(0) scaleY(1); }
+  50% { transform: translateY(18px) scaleY(0.92); }
+}
+@keyframes squat-knee {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(35deg); }
+}
+.agent-stage[data-preset="squat"] .agent-root,
+.agent-stage[data-preset="leg-press"] .agent-root {
+  animation: squat-down var(--agent-cycle) var(--agent-ease) infinite;
+}
+.agent-stage[data-preset="squat"] .knee,
+.agent-stage[data-preset="leg-press"] .knee,
+.agent-stage[data-preset="split-squat"] .leg-l .knee {
+  animation: squat-knee var(--agent-cycle) var(--agent-ease) infinite;
+}
+.agent-stage[data-preset="squat"] .arm-l,
+.agent-stage[data-preset="squat"] .arm-r {
+  transform: rotate(-25deg);
+}
+
+@keyframes split-sink {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(16px); }
+}
+.agent-stage[data-preset="split-squat"] .agent-root {
+  animation: split-sink var(--agent-cycle) var(--agent-ease) infinite;
+}
+.agent-stage[data-preset="split-squat"] .leg-r {
+  transform: rotate(28deg) translate(-6px, -10px);
+}
+
+@keyframes legext {
+  0%, 100% { transform: rotate(70deg); }
+  50% { transform: rotate(5deg); }
+}
+.agent-stage[data-preset="leg-ext"] .agent-root {
+  transform: translateY(22px);
+}
+.agent-stage[data-preset="leg-ext"] .knee {
+  animation: legext var(--agent-cycle) var(--agent-ease) infinite;
+}
+
+/* RDL */
+@keyframes rdl-hinge {
+  0%, 100% { transform: rotate(15deg); }
+  50% { transform: rotate(70deg); }
+}
+.agent-stage[data-preset="rdl"] .torso {
+  animation: rdl-hinge var(--agent-cycle) var(--agent-ease) infinite;
+}
+.agent-stage[data-preset="rdl"] .arm-l,
+.agent-stage[data-preset="rdl"] .arm-r {
+  transform: rotate(10deg);
+}
+
+/* bridge */
+@keyframes bridge-up {
+  0%, 100% { transform: rotate(90deg) translate(30px, 0) scale(0.85); }
+  50% { transform: rotate(90deg) translate(12px, -18px) scale(0.85); }
+}
+.agent-stage[data-preset="bridge"] .agent-root {
+  animation: bridge-up var(--agent-cycle) var(--agent-ease) infinite;
+}
+
+/* dead bug */
+@keyframes bug-arm {
+  0%, 100% { transform: rotate(-90deg); }
+  50% { transform: rotate(-20deg); }
+}
+@keyframes bug-leg {
+  0%, 100% { transform: rotate(-20deg); }
+  50% { transform: rotate(50deg); }
+}
+.agent-stage[data-preset="dead-bug"] .agent-root {
+  transform: rotate(90deg) translate(24px, -6px) scale(0.86);
+}
+.agent-stage[data-preset="dead-bug"] .arm-r {
+  animation: bug-arm var(--agent-cycle) var(--agent-ease) infinite;
+}
+.agent-stage[data-preset="dead-bug"] .leg-l {
+  animation: bug-leg var(--agent-cycle) var(--agent-ease) infinite;
+}
+.agent-stage[data-preset="dead-bug"] .arm-l,
+.agent-stage[data-preset="dead-bug"] .leg-r {
+  opacity: 0.55;
+}
+
+
+

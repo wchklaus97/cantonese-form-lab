@@ -1,5 +1,5 @@
 /** Form Agent — consistent human sprite sheets + per-action timing/frames */
-window.FORM_LAB_AGENT = {
+export const FORM_LAB_AGENT = {
   _timer: null,
   /** "m" | "f" — persisted in localStorage */
   gender: (() => {
