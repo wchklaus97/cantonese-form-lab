@@ -23,44 +23,8 @@ export function applyStaticI18n() {
   const desc = document.querySelector('meta[name="description"]');
   if (desc) desc.setAttribute("content", t("description"));
 
-  const map = {
-    "[data-i18n='skipLink']": "skipLink",
-    "[data-i18n='navRoutines']": "navRoutines",
-    "[data-i18n='navLibrary']": "navLibrary",
-    "[data-i18n='navNotes']": "navNotes",
-    "[data-i18n='eyebrow']": "eyebrow",
-    "[data-i18n='heroTitle']": "heroTitle",
-    "[data-i18n='lede']": "lede",
-    "[data-i18n='ctaLibrary']": "ctaLibrary",
-    "[data-i18n='ctaRoutines']": "ctaRoutines",
-    "[data-i18n='featuredCta']": "featuredCta",
-    "[data-i18n='routinesKicker']": "routinesKicker",
-    "[data-i18n='routinesTitle']": "routinesTitle",
-    "[data-i18n='routinesDesc']": "routinesDesc",
-    "[data-i18n='libraryKicker']": "libraryKicker",
-    "[data-i18n='libraryTitle']": "libraryTitle",
-    "[data-i18n='libraryDesc']": "libraryDesc",
-    "[data-i18n='searchLabel']": "searchLabel",
-    "[data-i18n='emptyTitle']": "emptyTitle",
-    "[data-i18n='emptyHint']": "emptyHint",
-    "[data-i18n='emptyReset']": "emptyReset",
-    "[data-i18n='notesKicker']": "notesKicker",
-    "[data-i18n='notesTitle']": "notesTitle",
-    "[data-i18n='note1']": "note1",
-    "[data-i18n='note2']": "note2",
-    "[data-i18n='note3']": "note3",
-    "[data-i18n='note4']": "note4",
-    "[data-i18n='note5']": "note5",
-    "[data-i18n='footerTag']": "footerTag",
-    "[data-i18n='installHint']": "installHint",
-    "[data-i18n='installBanner']": "installBanner",
-    "[data-i18n='installAccept']": "installAccept",
-    "[data-i18n='installDismiss']": "installDismiss",
-  };
-  Object.entries(map).forEach(([sel, key]) => {
-    document.querySelectorAll(sel).forEach((el) => {
-      el.textContent = t(key);
-    });
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    el.textContent = t(el.dataset.i18n);
   });
 
   const search = $("#move-search");

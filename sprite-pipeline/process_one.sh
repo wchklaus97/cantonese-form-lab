@@ -47,5 +47,5 @@ m=json.load(open("$outdir/pipeline-meta.json"))
 print("$name edge_touch:", m.get("edge_touch_frames"))
 PY
 
-python3 "$ASSEMBLE" --frames-dir "$outdir" --glob "idle-*.png" --output "$OUT/sheet-$name.png" --cell-size 512 --align feet --already-squared
+python3 "$ASSEMBLE" --frames-dir "$outdir" --glob "idle-*.png" --output "$OUT/sheet-$name.webp" --cell-size 512 --align feet --already-squared
 echo "OK $name"

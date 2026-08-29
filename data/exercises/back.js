@@ -2,12 +2,12 @@ export const exercises = [
   {
     "id": "back-01",
     "group": "back",
-    "image": "back-01-wide-elbow-row-cantonese.png",
+    "image": "back-01-wide-elbow-row-cantonese.webp",
     "minutes": 7,
     "setsReps": {
-      "yue": "3×10–12",
-      "zh": "3×10–12",
-      "en": "3×10–12"
+      "yue": "3×10-12",
+      "zh": "3×10-12",
+      "en": "3×10-12"
     },
     "name": {
       "yue": "寬肘划船",
@@ -21,19 +21,19 @@ export const exercises = [
     },
     "kg": {
       "beginner": {
-        "yue": "8–12",
-        "zh": "8–12",
-        "en": "8–12"
+        "yue": "8-12",
+        "zh": "8-12",
+        "en": "8-12"
       },
       "intermediate": {
-        "yue": "12–16",
-        "zh": "12–16",
-        "en": "12–16"
+        "yue": "12-16",
+        "zh": "12-16",
+        "en": "12-16"
       },
       "advanced": {
-        "yue": "16–22",
-        "zh": "16–22",
-        "en": "16–22"
+        "yue": "16-22",
+        "zh": "16-22",
+        "en": "16-22"
       }
     },
     "advanced": {
@@ -52,12 +52,12 @@ export const exercises = [
   {
     "id": "back-02",
     "group": "back",
-    "image": "back-02-bent-over-row-cantonese.png",
+    "image": "back-02-bent-over-row-cantonese.webp",
     "minutes": 8,
     "setsReps": {
-      "yue": "3–4×8–12",
-      "zh": "3–4×8–12",
-      "en": "3–4×8–12"
+      "yue": "3-4×8-12",
+      "zh": "3-4×8-12",
+      "en": "3-4×8-12"
     },
     "name": {
       "yue": "俯身划船",
@@ -71,19 +71,19 @@ export const exercises = [
     },
     "kg": {
       "beginner": {
-        "yue": "12–16",
-        "zh": "12–16",
-        "en": "12–16"
+        "yue": "12-16",
+        "zh": "12-16",
+        "en": "12-16"
       },
       "intermediate": {
-        "yue": "16–22",
-        "zh": "16–22",
-        "en": "16–22"
+        "yue": "16-22",
+        "zh": "16-22",
+        "en": "16-22"
       },
       "advanced": {
-        "yue": "22–30",
-        "zh": "22–30",
-        "en": "22–30"
+        "yue": "22-30",
+        "zh": "22-30",
+        "en": "22-30"
       }
     },
     "advanced": {
@@ -102,12 +102,12 @@ export const exercises = [
   {
     "id": "back-03",
     "group": "back",
-    "image": "back-03-one-arm-row-cantonese.png",
+    "image": "back-03-one-arm-row-cantonese.webp",
     "minutes": 8,
     "setsReps": {
-      "yue": "每邊 3×10–12",
-      "zh": "每侧 3×10–12",
-      "en": "per side 3×10–12"
+      "yue": "每邊 3×10-12",
+      "zh": "每侧 3×10-12",
+      "en": "per side 3×10-12"
     },
     "name": {
       "yue": "單臂划船",
@@ -121,19 +121,19 @@ export const exercises = [
     },
     "kg": {
       "beginner": {
-        "yue": "12–16",
-        "zh": "12–16",
-        "en": "12–16"
+        "yue": "12-16",
+        "zh": "12-16",
+        "en": "12-16"
       },
       "intermediate": {
-        "yue": "18–24",
-        "zh": "18–24",
-        "en": "18–24"
+        "yue": "18-24",
+        "zh": "18-24",
+        "en": "18-24"
       },
       "advanced": {
-        "yue": "24–32",
-        "zh": "24–32",
-        "en": "24–32"
+        "yue": "24-32",
+        "zh": "24-32",
+        "en": "24-32"
       }
     },
     "advanced": {
@@ -152,12 +152,12 @@ export const exercises = [
   {
     "id": "back-04",
     "group": "back",
-    "image": "back-04-close-elbow-row-cantonese.png",
+    "image": "back-04-close-elbow-row-cantonese.webp",
     "minutes": 7,
     "setsReps": {
-      "yue": "3×10–12",
-      "zh": "3×10–12",
-      "en": "3×10–12"
+      "yue": "3×10-12",
+      "zh": "3×10-12",
+      "en": "3×10-12"
     },
     "name": {
       "yue": "窄肘划船",
@@ -171,19 +171,19 @@ export const exercises = [
     },
     "kg": {
       "beginner": {
-        "yue": "10–14",
-        "zh": "10–14",
-        "en": "10–14"
+        "yue": "10-14",
+        "zh": "10-14",
+        "en": "10-14"
       },
       "intermediate": {
-        "yue": "14–20",
-        "zh": "14–20",
-        "en": "14–20"
+        "yue": "14-20",
+        "zh": "14-20",
+        "en": "14-20"
       },
       "advanced": {
-        "yue": "20–28",
-        "zh": "20–28",
-        "en": "20–28"
+        "yue": "20-28",
+        "zh": "20-28",
+        "en": "20-28"
       }
     },
     "advanced": {
@@ -202,12 +202,12 @@ export const exercises = [
   {
     "id": "back-05",
     "group": "back",
-    "image": "back-05-incline-row-cantonese.png",
+    "image": "back-05-incline-row-cantonese.webp",
     "minutes": 8,
     "setsReps": {
-      "yue": "每邊 3×10–12",
-      "zh": "每侧 3×10–12",
-      "en": "per side 3×10–12"
+      "yue": "每邊 3×10-12",
+      "zh": "每侧 3×10-12",
+      "en": "per side 3×10-12"
     },
     "name": {
       "yue": "上斜支撐划船",
@@ -221,19 +221,19 @@ export const exercises = [
     },
     "kg": {
       "beginner": {
-        "yue": "12–16",
-        "zh": "12–16",
-        "en": "12–16"
+        "yue": "12-16",
+        "zh": "12-16",
+        "en": "12-16"
       },
       "intermediate": {
-        "yue": "16–22",
-        "zh": "16–22",
-        "en": "16–22"
+        "yue": "16-22",
+        "zh": "16-22",
+        "en": "16-22"
       },
       "advanced": {
-        "yue": "22–30",
-        "zh": "22–30",
-        "en": "22–30"
+        "yue": "22-30",
+        "zh": "22-30",
+        "en": "22-30"
       }
     },
     "advanced": {
@@ -252,12 +252,12 @@ export const exercises = [
   {
     "id": "back-06",
     "group": "back",
-    "image": "back-06-squeeze-row-cantonese.png",
+    "image": "back-06-squeeze-row-cantonese.webp",
     "minutes": 8,
     "setsReps": {
-      "yue": "3×8–12",
-      "zh": "3×8–12",
-      "en": "3×8–12"
+      "yue": "3×8-12",
+      "zh": "3×8-12",
+      "en": "3×8-12"
     },
     "name": {
       "yue": "俯身划船 · 頂端夾背",
@@ -271,19 +271,19 @@ export const exercises = [
     },
     "kg": {
       "beginner": {
-        "yue": "10–14",
-        "zh": "10–14",
-        "en": "10–14"
+        "yue": "10-14",
+        "zh": "10-14",
+        "en": "10-14"
       },
       "intermediate": {
-        "yue": "14–20",
-        "zh": "14–20",
-        "en": "14–20"
+        "yue": "14-20",
+        "zh": "14-20",
+        "en": "14-20"
       },
       "advanced": {
-        "yue": "20–26",
-        "zh": "20–26",
-        "en": "20–26"
+        "yue": "20-26",
+        "zh": "20-26",
+        "en": "20-26"
       }
     },
     "advanced": {

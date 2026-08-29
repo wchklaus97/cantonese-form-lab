@@ -2,12 +2,12 @@ export const exercises = [
   {
     "id": "arms-01",
     "group": "arms",
-    "image": "arms-01-dumbbell-curl-cantonese.png",
+    "image": "arms-01-dumbbell-curl-cantonese.webp",
     "minutes": 6,
     "setsReps": {
-      "yue": "3×10–12",
-      "zh": "3×10–12",
-      "en": "3×10–12"
+      "yue": "3×10-12",
+      "zh": "3×10-12",
+      "en": "3×10-12"
     },
     "name": {
       "yue": "啞鈴彎舉",
@@ -21,19 +21,19 @@ export const exercises = [
     },
     "kg": {
       "beginner": {
-        "yue": "8–12",
-        "zh": "8–12",
-        "en": "8–12"
+        "yue": "8-12",
+        "zh": "8-12",
+        "en": "8-12"
       },
       "intermediate": {
-        "yue": "12–18",
-        "zh": "12–18",
-        "en": "12–18"
+        "yue": "12-18",
+        "zh": "12-18",
+        "en": "12-18"
       },
       "advanced": {
-        "yue": "18–25",
-        "zh": "18–25",
-        "en": "18–25"
+        "yue": "18-25",
+        "zh": "18-25",
+        "en": "18-25"
       }
     },
     "advanced": {
@@ -52,12 +52,12 @@ export const exercises = [
   {
     "id": "arms-02",
     "group": "arms",
-    "image": "arms-02-alternating-curl-cantonese.png",
+    "image": "arms-02-alternating-curl-cantonese.webp",
     "minutes": 7,
     "setsReps": {
-      "yue": "每邊 3×10–12",
-      "zh": "每侧 3×10–12",
-      "en": "per side 3×10–12"
+      "yue": "每邊 3×10-12",
+      "zh": "每侧 3×10-12",
+      "en": "per side 3×10-12"
     },
     "name": {
       "yue": "交替啞鈴彎舉",
@@ -71,19 +71,19 @@ export const exercises = [
     },
     "kg": {
       "beginner": {
-        "yue": "8–12",
-        "zh": "8–12",
-        "en": "8–12"
+        "yue": "8-12",
+        "zh": "8-12",
+        "en": "8-12"
       },
       "intermediate": {
-        "yue": "12–18",
-        "zh": "12–18",
-        "en": "12–18"
+        "yue": "12-18",
+        "zh": "12-18",
+        "en": "12-18"
       },
       "advanced": {
-        "yue": "18–24",
-        "zh": "18–24",
-        "en": "18–24"
+        "yue": "18-24",
+        "zh": "18-24",
+        "en": "18-24"
       }
     },
     "advanced": {
@@ -102,12 +102,12 @@ export const exercises = [
   {
     "id": "arms-03",
     "group": "arms",
-    "image": "arms-03-seated-curl-cantonese.png",
+    "image": "arms-03-seated-curl-cantonese.webp",
     "minutes": 6,
     "setsReps": {
-      "yue": "3×10–12",
-      "zh": "3×10–12",
-      "en": "3×10–12"
+      "yue": "3×10-12",
+      "zh": "3×10-12",
+      "en": "3×10-12"
     },
     "name": {
       "yue": "坐姿啞鈴彎舉",
@@ -121,19 +121,19 @@ export const exercises = [
     },
     "kg": {
       "beginner": {
-        "yue": "8–12",
-        "zh": "8–12",
-        "en": "8–12"
+        "yue": "8-12",
+        "zh": "8-12",
+        "en": "8-12"
       },
       "intermediate": {
-        "yue": "12–16",
-        "zh": "12–16",
-        "en": "12–16"
+        "yue": "12-16",
+        "zh": "12-16",
+        "en": "12-16"
       },
       "advanced": {
-        "yue": "16–22",
-        "zh": "16–22",
-        "en": "16–22"
+        "yue": "16-22",
+        "zh": "16-22",
+        "en": "16-22"
       }
     },
     "advanced": {
@@ -152,12 +152,12 @@ export const exercises = [
   {
     "id": "arms-04",
     "group": "arms",
-    "image": "arms-04-triceps-kickback-cantonese.png",
+    "image": "arms-04-triceps-kickback-cantonese.webp",
     "minutes": 7,
     "setsReps": {
-      "yue": "每邊 3×10–12",
-      "zh": "每侧 3×10–12",
-      "en": "per side 3×10–12"
+      "yue": "每邊 3×10-12",
+      "zh": "每侧 3×10-12",
+      "en": "per side 3×10-12"
     },
     "name": {
       "yue": "三頭肌後踢",
@@ -171,19 +171,19 @@ export const exercises = [
     },
     "kg": {
       "beginner": {
-        "yue": "5–8",
-        "zh": "5–8",
-        "en": "5–8"
+        "yue": "5-8",
+        "zh": "5-8",
+        "en": "5-8"
       },
       "intermediate": {
-        "yue": "8–12",
-        "zh": "8–12",
-        "en": "8–12"
+        "yue": "8-12",
+        "zh": "8-12",
+        "en": "8-12"
       },
       "advanced": {
-        "yue": "12–16",
-        "zh": "12–16",
-        "en": "12–16"
+        "yue": "12-16",
+        "zh": "12-16",
+        "en": "12-16"
       }
     },
     "advanced": {
@@ -202,12 +202,12 @@ export const exercises = [
   {
     "id": "arms-05",
     "group": "arms",
-    "image": "arms-05-bench-dip-cantonese.png",
+    "image": "arms-05-bench-dip-cantonese.webp",
     "minutes": 6,
     "setsReps": {
-      "yue": "3×8–12",
-      "zh": "3×8–12",
-      "en": "3×8–12"
+      "yue": "3×8-12",
+      "zh": "3×8-12",
+      "en": "3×8-12"
     },
     "name": {
       "yue": "凳上撐體",
@@ -231,9 +231,9 @@ export const exercises = [
         "en": "Bodyweight (legs straight)"
       },
       "advanced": {
-        "yue": "+5–15 kg 負重",
-        "zh": "+5–15 kg 负重",
-        "en": "+5–15 kg 負重"
+        "yue": "+5-15 kg 負重",
+        "zh": "+5-15 kg 负重",
+        "en": "+5-15 kg load"
       }
     },
     "advanced": {
@@ -252,12 +252,12 @@ export const exercises = [
   {
     "id": "arms-06",
     "group": "arms",
-    "image": "arms-06-overhead-extension-cantonese.png",
+    "image": "arms-06-overhead-extension-cantonese.webp",
     "minutes": 6,
     "setsReps": {
-      "yue": "3×10–12",
-      "zh": "3×10–12",
-      "en": "3×10–12"
+      "yue": "3×10-12",
+      "zh": "3×10-12",
+      "en": "3×10-12"
     },
     "name": {
       "yue": "過頭三頭伸展",
@@ -271,19 +271,19 @@ export const exercises = [
     },
     "kg": {
       "beginner": {
-        "yue": "10–14",
-        "zh": "10–14",
-        "en": "10–14"
+        "yue": "10-14",
+        "zh": "10-14",
+        "en": "10-14"
       },
       "intermediate": {
-        "yue": "14–20",
-        "zh": "14–20",
-        "en": "14–20"
+        "yue": "14-20",
+        "zh": "14-20",
+        "en": "14-20"
       },
       "advanced": {
-        "yue": "20–28",
-        "zh": "20–28",
-        "en": "20–28"
+        "yue": "20-28",
+        "zh": "20-28",
+        "en": "20-28"
       }
     },
     "advanced": {

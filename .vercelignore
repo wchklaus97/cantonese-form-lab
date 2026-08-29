@@ -7,4 +7,10 @@ sprite-pipeline/qc
 sprite-pipeline/qc-critic-f
 sprite-pipeline/guides
 gauntlet-workbench.md
+sprite-pipeline
+tests
+CONTENT_REVIEW.md
+design.md
+README.md
+public/sprites/agent-human-*-ref.png
 .git

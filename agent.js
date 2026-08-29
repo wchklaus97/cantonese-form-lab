@@ -1,8 +1,9 @@
-/** Form Agent — consistent human sprite sheets + per-action timing/frames */
+/** Form Agent: consistent human sprite sheets + per-action timing/frames */
 export const FORM_LAB_AGENT = {
   _timer: null,
-  /** "m" | "f" — persisted in localStorage */
+  /** "m" | "f", persisted in localStorage */
   gender: (() => {
+    if (typeof window === "undefined") return "m";
     try {
       const g = localStorage.getItem("form-lab-agent-gender");
       return g === "f" ? "f" : "m";
@@ -143,9 +144,9 @@ export const FORM_LAB_AGENT = {
   sheetFor(preset) {
     const key = this.sheetAlias[preset] || preset;
     if (this.gender === "f" && this.femalePresets[key]) {
-      return `./public/sprites/f/sheet-${key}.png`;
+      return `./public/sprites/f/sheet-${key}.webp`;
     }
-    return `./public/sprites/sheet-${key}.png`;
+    return `./public/sprites/sheet-${key}.webp`;
   },
 
   stop() {
@@ -273,7 +274,7 @@ export const FORM_LAB_AGENT = {
       strip.onload = () => showSheet();
       strip.onerror = () => {
         const key = this.sheetAlias[preset] || preset;
-        const malePath = `./public/sprites/sheet-${key}.png`;
+        const malePath = `./public/sprites/sheet-${key}.webp`;
         if (this.gender === "f" && !strip.dataset.fellBack) {
           strip.dataset.fellBack = "1";
           strip.src = malePath;

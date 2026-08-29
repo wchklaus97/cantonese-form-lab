@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Assemble processed frame PNGs into a horizontal strip for the Form Lab player.
+"""Assemble processed frame PNGs into a horizontal WebP strip for the Form Lab player.
 
 Standard delivery: square cells (default 512x512), feet-aligned, shared scale,
 transparent padding — never stretch/distort frames. Runtime clips by cell width.
@@ -140,7 +140,10 @@ def main() -> None:
         strip.paste(im, (i * size[0], 0), im)
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    strip.save(args.output, optimize=True)
+    save_options: dict[str, object] = {"optimize": True}
+    if args.output.suffix.lower() == ".webp":
+        save_options = {"format": "WEBP", "quality": 92, "method": 6, "exact": True}
+    strip.save(args.output, **save_options)
     print(f"Wrote {args.output} ({len(images)} frames, cell={size[0]}x{size[1]})")
 
 

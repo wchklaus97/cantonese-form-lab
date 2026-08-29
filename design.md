@@ -62,10 +62,12 @@ Rejected reflexes: Inter, Outfit, Cormorant Garamond, Space Grotesk, Instrument 
 
 | Role | Face | Why |
 |------|------|-----|
-| Wordmark / Latin display | **Big Shoulders Display** 800 | Gym scoreboard / dest-board condensed. Not a SaaS grotesque. |
-| UI + Chinese | **Noto Sans HK** 400–700 | HK glyphs for Cantonese. Matches the cards’ sans. |
-| Simplified fallback | **Noto Sans SC** | `zh` locale only. |
-| kg / times / indexes | **Red Hat Mono** 500–600 | Tabular numbers. Not IBM Plex / Space Mono. |
+| Wordmark / Latin display | **Arial Narrow / Avenir Next Condensed** 800 | Local condensed faces keep the gym scoreboard character without a blocking web-font request. |
+| UI + Chinese | **System HK sans stack** 400–700 | `PingFang HK` first on Apple platforms, then locally installed `Noto Sans HK` / `Microsoft JhengHei`. |
+| Simplified fallback | **System CJK sans** | The platform supplies simplified glyphs for the `zh` locale. |
+| kg / times / indexes | **SFMono / Menlo / Consolas** 500–600 | Local tabular mono faces avoid a separate font payload. |
+
+Production does not request Google Fonts. This prevents the large Traditional and Simplified Chinese subset fan-out on a cold mobile load.
 
 Scale (product UI, fixed rem — not fluid marketing type except the hero title):
 

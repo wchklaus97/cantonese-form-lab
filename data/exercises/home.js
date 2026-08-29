@@ -2,12 +2,12 @@ export const exercises = [
   {
     "id": "home-01",
     "group": "home",
-    "image": "home-01-rdl-cantonese.png",
+    "image": "home-01-rdl-cantonese.webp",
     "minutes": 7,
     "setsReps": {
-      "yue": "3×10–12",
-      "zh": "3×10–12",
-      "en": "3×10–12"
+      "yue": "3×10-12",
+      "zh": "3×10-12",
+      "en": "3×10-12"
     },
     "name": {
       "yue": "啞鈴羅馬尼亞硬拉",
@@ -21,19 +21,19 @@ export const exercises = [
     },
     "kg": {
       "beginner": {
-        "yue": "4–6",
-        "zh": "4–6",
-        "en": "4–6"
+        "yue": "4-6",
+        "zh": "4-6",
+        "en": "4-6"
       },
       "intermediate": {
-        "yue": "6–8",
-        "zh": "6–8",
-        "en": "6–8"
+        "yue": "6-8",
+        "zh": "6-8",
+        "en": "6-8"
       },
       "advanced": {
-        "yue": "8（或單啞鈴 8–12）",
-        "zh": "8（或单哑铃 8–12）",
-        "en": "8 (or one DB 8–12)"
+        "yue": "8（或單啞鈴 8-12）",
+        "zh": "8（或单哑铃 8-12）",
+        "en": "8 (or one DB 8-12)"
       }
     },
     "advanced": {
@@ -52,12 +52,12 @@ export const exercises = [
   {
     "id": "home-02",
     "group": "home",
-    "image": "home-02-glute-bridge-cantonese.png",
+    "image": "home-02-glute-bridge-cantonese.webp",
     "minutes": 6,
     "setsReps": {
-      "yue": "3×12–15",
-      "zh": "3×12–15",
-      "en": "3×12–15"
+      "yue": "3×12-15",
+      "zh": "3×12-15",
+      "en": "3×12-15"
     },
     "name": {
       "yue": "啞鈴臀橋",
@@ -76,14 +76,14 @@ export const exercises = [
         "en": "Bodyweight"
       },
       "intermediate": {
-        "yue": "4–8",
-        "zh": "4–8",
-        "en": "4–8"
+        "yue": "4-8",
+        "zh": "4-8",
+        "en": "4-8"
       },
       "advanced": {
-        "yue": "8–16（雙手 Dumbbell）",
-        "zh": "8–16（双手 Dumbbell）",
-        "en": "8–16 (two DBs)"
+        "yue": "8-16（雙手 Dumbbell）",
+        "zh": "8-16（双手 Dumbbell）",
+        "en": "8-16 (two DBs)"
       }
     },
     "advanced": {
@@ -102,12 +102,12 @@ export const exercises = [
   {
     "id": "home-03",
     "group": "home",
-    "image": "home-03-seated-press-cantonese.png",
+    "image": "home-03-seated-press-cantonese.webp",
     "minutes": 7,
     "setsReps": {
-      "yue": "3×8–12",
-      "zh": "3×8–12",
-      "en": "3×8–12"
+      "yue": "3×8-12",
+      "zh": "3×8-12",
+      "en": "3×8-12"
     },
     "name": {
       "yue": "坐姿啞鈴推肩",
@@ -121,19 +121,19 @@ export const exercises = [
     },
     "kg": {
       "beginner": {
-        "yue": "3–5",
-        "zh": "3–5",
-        "en": "3–5"
+        "yue": "3-5",
+        "zh": "3-5",
+        "en": "3-5"
       },
       "intermediate": {
-        "yue": "5–7",
-        "zh": "5–7",
-        "en": "5–7"
+        "yue": "5-7",
+        "zh": "5-7",
+        "en": "5-7"
       },
       "advanced": {
-        "yue": "7–8",
-        "zh": "7–8",
-        "en": "7–8"
+        "yue": "7-8",
+        "zh": "7-8",
+        "en": "7-8"
       }
     },
     "advanced": {
@@ -152,12 +152,12 @@ export const exercises = [
   {
     "id": "home-04",
     "group": "home",
-    "image": "home-04-chest-fly-cantonese.png",
+    "image": "home-04-chest-fly-cantonese.webp",
     "minutes": 7,
     "setsReps": {
-      "yue": "3×10–12",
-      "zh": "3×10–12",
-      "en": "3×10–12"
+      "yue": "3×10-12",
+      "zh": "3×10-12",
+      "en": "3×10-12"
     },
     "name": {
       "yue": "啞鈴飛鳥",
@@ -171,19 +171,19 @@ export const exercises = [
     },
     "kg": {
       "beginner": {
-        "yue": "3–5",
-        "zh": "3–5",
-        "en": "3–5"
+        "yue": "3-5",
+        "zh": "3-5",
+        "en": "3-5"
       },
       "intermediate": {
-        "yue": "5–7",
-        "zh": "5–7",
-        "en": "5–7"
+        "yue": "5-7",
+        "zh": "5-7",
+        "en": "5-7"
       },
       "advanced": {
-        "yue": "7–8",
-        "zh": "7–8",
-        "en": "7–8"
+        "yue": "7-8",
+        "zh": "7-8",
+        "en": "7-8"
       }
     },
     "advanced": {
@@ -202,12 +202,12 @@ export const exercises = [
   {
     "id": "home-05",
     "group": "home",
-    "image": "home-05-reverse-fly-cantonese.png",
+    "image": "home-05-reverse-fly-cantonese.webp",
     "minutes": 6,
     "setsReps": {
-      "yue": "3×12–15",
-      "zh": "3×12–15",
-      "en": "3×12–15"
+      "yue": "3×12-15",
+      "zh": "3×12-15",
+      "en": "3×12-15"
     },
     "name": {
       "yue": "俯身反向飛鳥",
@@ -221,19 +221,19 @@ export const exercises = [
     },
     "kg": {
       "beginner": {
-        "yue": "2–3",
-        "zh": "2–3",
-        "en": "2–3"
+        "yue": "2-3",
+        "zh": "2-3",
+        "en": "2-3"
       },
       "intermediate": {
-        "yue": "3–5",
-        "zh": "3–5",
-        "en": "3–5"
+        "yue": "3-5",
+        "zh": "3-5",
+        "en": "3-5"
       },
       "advanced": {
-        "yue": "5–7",
-        "zh": "5–7",
-        "en": "5–7"
+        "yue": "5-7",
+        "zh": "5-7",
+        "en": "5-7"
       }
     },
     "advanced": {
@@ -252,12 +252,12 @@ export const exercises = [
   {
     "id": "home-06",
     "group": "home",
-    "image": "home-06-dead-bug-cantonese.png",
+    "image": "home-06-dead-bug-cantonese.webp",
     "minutes": 5,
     "setsReps": {
-      "yue": "每邊 3×8–10",
-      "zh": "每侧 3×8–10",
-      "en": "per side 3×8–10"
+      "yue": "每邊 3×8-10",
+      "zh": "每侧 3×8-10",
+      "en": "per side 3×8-10"
     },
     "name": {
       "yue": "死蟲式",

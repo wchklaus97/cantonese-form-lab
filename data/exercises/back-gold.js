@@ -2,12 +2,12 @@ export const exercises = [
   {
     "id": "back-gold-01",
     "group": "back-gold",
-    "image": "back-gold-01-lat-pulldown-cantonese.png",
+    "image": "back-gold-01-lat-pulldown-cantonese.webp",
     "minutes": 8,
     "setsReps": {
-      "yue": "3×10–12",
-      "zh": "3×10–12",
-      "en": "3×10–12"
+      "yue": "3×10-12",
+      "zh": "3×10-12",
+      "en": "3×10-12"
     },
     "name": {
       "yue": "高位下拉",
@@ -21,19 +21,19 @@ export const exercises = [
     },
     "kg": {
       "beginner": {
-        "yue": "30–40",
-        "zh": "30–40",
-        "en": "30–40"
+        "yue": "30-40",
+        "zh": "30-40",
+        "en": "30-40"
       },
       "intermediate": {
-        "yue": "45–60",
-        "zh": "45–60",
-        "en": "45–60"
+        "yue": "45-60",
+        "zh": "45-60",
+        "en": "45-60"
       },
       "advanced": {
-        "yue": "65–80",
-        "zh": "65–80",
-        "en": "65–80"
+        "yue": "65-80",
+        "zh": "65-80",
+        "en": "65-80"
       }
     },
     "advanced": {
@@ -52,12 +52,12 @@ export const exercises = [
   {
     "id": "back-gold-02",
     "group": "back-gold",
-    "image": "back-gold-02-seated-row-cantonese.png",
+    "image": "back-gold-02-seated-row-cantonese.webp",
     "minutes": 8,
     "setsReps": {
-      "yue": "3×10–12",
-      "zh": "3×10–12",
-      "en": "3×10–12"
+      "yue": "3×10-12",
+      "zh": "3×10-12",
+      "en": "3×10-12"
     },
     "name": {
       "yue": "坐姿划船",
@@ -71,19 +71,19 @@ export const exercises = [
     },
     "kg": {
       "beginner": {
-        "yue": "30–40",
-        "zh": "30–40",
-        "en": "30–40"
+        "yue": "30-40",
+        "zh": "30-40",
+        "en": "30-40"
       },
       "intermediate": {
-        "yue": "45–60",
-        "zh": "45–60",
-        "en": "45–60"
+        "yue": "45-60",
+        "zh": "45-60",
+        "en": "45-60"
       },
       "advanced": {
-        "yue": "65–80",
-        "zh": "65–80",
-        "en": "65–80"
+        "yue": "65-80",
+        "zh": "65-80",
+        "en": "65-80"
       }
     },
     "advanced": {
@@ -102,7 +102,7 @@ export const exercises = [
   {
     "id": "back-gold-03",
     "group": "back-gold",
-    "image": "back-gold-03-pullups-cantonese.png",
+    "image": "back-gold-03-pullups-cantonese.webp",
     "minutes": 10,
     "setsReps": {
       "yue": "3組至力竭",
@@ -131,9 +131,9 @@ export const exercises = [
         "en": "Bodyweight"
       },
       "advanced": {
-        "yue": "+5–15 kg",
-        "zh": "+5–15 kg",
-        "en": "+5–15 kg"
+        "yue": "+5-15 kg",
+        "zh": "+5-15 kg",
+        "en": "+5-15 kg"
       }
     },
     "advanced": {
@@ -152,12 +152,12 @@ export const exercises = [
   {
     "id": "back-gold-04",
     "group": "back-gold",
-    "image": "back-gold-04-barbell-row-cantonese.png",
+    "image": "back-gold-04-barbell-row-cantonese.webp",
     "minutes": 10,
     "setsReps": {
-      "yue": "4×6–10",
-      "zh": "4×6–10",
-      "en": "4×6–10"
+      "yue": "4×6-10",
+      "zh": "4×6-10",
+      "en": "4×6-10"
     },
     "name": {
       "yue": "槓鈴划船",
@@ -171,19 +171,19 @@ export const exercises = [
     },
     "kg": {
       "beginner": {
-        "yue": "40–50",
-        "zh": "40–50",
-        "en": "40–50"
+        "yue": "40-50",
+        "zh": "40-50",
+        "en": "40-50"
       },
       "intermediate": {
-        "yue": "60–80",
-        "zh": "60–80",
-        "en": "60–80"
+        "yue": "60-80",
+        "zh": "60-80",
+        "en": "60-80"
       },
       "advanced": {
-        "yue": "90–110",
-        "zh": "90–110",
-        "en": "90–110"
+        "yue": "90-110",
+        "zh": "90-110",
+        "en": "90-110"
       }
     },
     "advanced": {
@@ -202,12 +202,12 @@ export const exercises = [
   {
     "id": "back-gold-05",
     "group": "back-gold",
-    "image": "back-gold-05-weighted-pullups-cantonese.png",
+    "image": "back-gold-05-weighted-pullups-cantonese.webp",
     "minutes": 12,
     "setsReps": {
-      "yue": "4×3–6",
-      "zh": "4×3–6",
-      "en": "4×3–6"
+      "yue": "4×3-6",
+      "zh": "4×3-6",
+      "en": "4×3-6"
     },
     "name": {
       "yue": "負重引體",
@@ -226,14 +226,14 @@ export const exercises = [
         "en": "+5"
       },
       "intermediate": {
-        "yue": "+10–15",
-        "zh": "+10–15",
-        "en": "+10–15"
+        "yue": "+10-15",
+        "zh": "+10-15",
+        "en": "+10-15"
       },
       "advanced": {
-        "yue": "+20+",
-        "zh": "+20+",
-        "en": "+20+"
+        "yue": "20+",
+        "zh": "20+",
+        "en": "20+"
       }
     },
     "advanced": {
@@ -252,12 +252,12 @@ export const exercises = [
   {
     "id": "back-gold-06",
     "group": "back-gold",
-    "image": "back-gold-06-tbar-row-cantonese.png",
+    "image": "back-gold-06-tbar-row-cantonese.webp",
     "minutes": 10,
     "setsReps": {
-      "yue": "4×6–10",
-      "zh": "4×6–10",
-      "en": "4×6–10"
+      "yue": "4×6-10",
+      "zh": "4×6-10",
+      "en": "4×6-10"
     },
     "name": {
       "yue": "T槓划船",
@@ -271,19 +271,19 @@ export const exercises = [
     },
     "kg": {
       "beginner": {
-        "yue": "30–40",
-        "zh": "30–40",
-        "en": "30–40"
+        "yue": "30-40",
+        "zh": "30-40",
+        "en": "30-40"
       },
       "intermediate": {
-        "yue": "50–70",
-        "zh": "50–70",
-        "en": "50–70"
+        "yue": "50-70",
+        "zh": "50-70",
+        "en": "50-70"
       },
       "advanced": {
-        "yue": "80–100",
-        "zh": "80–100",
-        "en": "80–100"
+        "yue": "80-100",
+        "zh": "80-100",
+        "en": "80-100"
       }
     },
     "advanced": {

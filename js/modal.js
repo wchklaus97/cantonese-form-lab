@@ -3,7 +3,7 @@ import { FORM_LAB_AGENT } from "../agent.js";
 import { appState } from "./state.js";
 import { $ } from "./dom.js";
 import {
-  cardImagePng,
+  cardImageFull,
   prefersReducedMotion,
   icon,
 } from "./helpers.js";
@@ -113,7 +113,7 @@ export function openModal(id) {
   appState.lastCardEl =
     document.querySelector(`.ex-card[data-id="${id}"]`) || document.activeElement;
   const body = $("#modal-body");
-  const cardSrc = cardImagePng(ex.image);
+  const cardSrc = cardImageFull(ex.image);
   const cardAlt = `${L(ex.name)} ${t("cardFullAlt")}`;
   body.innerHTML = `
     <figure class="card-frame" data-open-lightbox tabindex="0" role="button" aria-label="${t("viewFullscreen")}">

@@ -1,12 +1,12 @@
 export const prefersReducedMotion = () =>
   window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-export function cardImagePng(image) {
+export function cardImageFull(image) {
   return `./public/cards/${image}`;
 }
 
 export function cardImageThumb(image) {
-  const base = image.replace(/\.png$/i, "");
+  const base = image.replace(/\.(png|webp)$/i, "");
   return `./public/cards/thumbs/${base}.webp`;
 }
 

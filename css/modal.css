@@ -49,8 +49,8 @@
   top: 0.65rem;
   right: 0.7rem;
   z-index: 2;
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2.75rem;
+  height: 2.75rem;
   border-radius: var(--radius-ctl);
   border: 1px solid var(--line);
   background: var(--bg-elev);
@@ -101,7 +101,7 @@
   font: inherit;
   font-size: var(--type-meta);
   font-weight: 600;
-  min-height: 40px;
+  min-height: 44px;
   padding: 0.4rem 0.7rem;
   cursor: pointer;
 }
@@ -142,8 +142,8 @@
 }
 
 .lightbox-btn {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.75rem;
+  height: 2.75rem;
   border-radius: var(--radius-ctl);
   border: 1px solid oklch(0.95 0.01 75 / 0.28);
   background: oklch(0.95 0.01 75 / 0.12);

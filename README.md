@@ -23,6 +23,18 @@ python3 -m http.server 5173
 
 打開：http://localhost:5173
 
+## 驗證
+
+```bash
+npm test
+```
+
+測試會檢查 36 個動作與 6 個訓練組、三語欄位、英文資料、WebP 卡圖與男女角色 sprite，以及 PWA 預快取清單。
+
+## 內容審核狀態
+
+重量、時間與進階動作目前屬編輯參考資料，尚未由合資格教練獨立審核。介面已明確顯示此狀態；審核範圍和交接清單見 `CONTENT_REVIEW.md`。
+
 ## 結構
 
 **檔案上限：每個 `.js` / `.css` 約 600 行以內**（見 `design.md`）。
@@ -35,4 +47,5 @@ python3 -m http.server 5173
 - `i18n.js` — 介面字串
 - `agent.js` — Form Agent sprite 引擎
 - `manifest.webmanifest` / `sw.js` — PWA
-- `public/cards/` — 步驟卡圖片（`thumbs/` 為列表縮圖）
+- `public/cards/` — WebP 步驟卡圖片（`thumbs/` 為列表縮圖）
+- `tests/` — 資料、素材與 PWA 完整性測試

@@ -8,9 +8,9 @@ export const routines = [
       "en": "Arms · Build Stronger"
     },
     "minutes": {
-      "yue": "35–45 分鐘",
-      "zh": "35–45 分钟",
-      "en": "35–45 min"
+      "yue": "35-45 分鐘",
+      "zh": "35-45 分钟",
+      "en": "35-45 min"
     },
     "focus": {
       "yue": "二頭 + 三頭",
@@ -27,9 +27,9 @@ export const routines = [
       "en": "Chest · Build Stronger"
     },
     "minutes": {
-      "yue": "40–50 分鐘",
-      "zh": "40–50 分钟",
-      "en": "40–50 min"
+      "yue": "40-50 分鐘",
+      "zh": "40-50 分钟",
+      "en": "40-50 min"
     },
     "focus": {
       "yue": "上／中／下胸",
@@ -46,9 +46,9 @@ export const routines = [
       "en": "Back · Build Stronger"
     },
     "minutes": {
-      "yue": "40–50 分鐘",
-      "zh": "40–50 分钟",
-      "en": "40–50 min"
+      "yue": "40-50 分鐘",
+      "zh": "40-50 分钟",
+      "en": "40-50 min"
     },
     "focus": {
       "yue": "划船系列",
@@ -65,9 +65,9 @@ export const routines = [
       "en": "Thighs · Gold Standard"
     },
     "minutes": {
-      "yue": "45–55 分鐘",
-      "zh": "45–55 分钟",
-      "en": "45–55 min"
+      "yue": "45-55 分鐘",
+      "zh": "45-55 分钟",
+      "en": "45-55 min"
     },
     "focus": {
       "yue": "股四 + 臀",
@@ -84,9 +84,9 @@ export const routines = [
       "en": "Back · Gold Standard"
     },
     "minutes": {
-      "yue": "45–60 分鐘",
-      "zh": "45–60 分钟",
-      "en": "45–60 min"
+      "yue": "45-60 分鐘",
+      "zh": "45-60 分钟",
+      "en": "45-60 min"
     },
     "focus": {
       "yue": "下拉 + 引體 + 划船",
@@ -103,9 +103,9 @@ export const routines = [
       "en": "Home Full Body"
     },
     "minutes": {
-      "yue": "30–40 分鐘",
-      "zh": "30–40 分钟",
-      "en": "30–40 min"
+      "yue": "30-40 分鐘",
+      "zh": "30-40 分钟",
+      "en": "30-40 min"
     },
     "focus": {
       "yue": "啞鈴 + 長凳（貼合屋企設備）",

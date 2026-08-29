@@ -53,7 +53,7 @@
   padding: 0.4rem 0.6rem;
   cursor: pointer;
   min-width: 2.4rem;
-  min-height: 36px;
+  min-height: 44px;
 }
 
 .agent-gender-btn[aria-pressed="true"] {
@@ -62,8 +62,8 @@
 }
 
 .agent-play {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2.75rem;
+  height: 2.75rem;
   border-radius: var(--radius-ctl);
   border: 1px solid var(--line);
   background: var(--bg-elev);
@@ -214,6 +214,10 @@
 }
 
 @media (max-width: 720px) {
+  :root {
+    --header-h: 116px;
+  }
+
   .site-header {
     display: grid;
     grid-template-columns: 1fr auto;
@@ -221,6 +225,7 @@
       "brand lang"
       "nav nav";
     align-items: center;
+    row-gap: 4px;
   }
 
   .brand { grid-area: brand; }
@@ -238,7 +243,7 @@
   .lang-full { display: none; }
   .lang-short { display: inline; }
   .lang-btn {
-    min-width: 2.5rem;
+    min-width: 2.75rem;
     padding: 0.4rem 0.55rem;
   }
 

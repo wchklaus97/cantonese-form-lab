@@ -12,9 +12,7 @@
   <link rel="manifest" href="./manifest.webmanifest" />
   <link rel="icon" href="./public/icons/icon-192.png" />
   <link rel="apple-touch-icon" href="./public/icons/icon-192.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=Noto+Sans+HK:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Red+Hat+Mono:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="./public/cards/thumbs/chest-01-bench-press-cantonese.webp" fetchpriority="high" />
   <link rel="stylesheet" href="./css/tokens.css" />
   <link rel="stylesheet" href="./css/layout.css" />
   <link rel="stylesheet" href="./css/library.css" />
@@ -53,7 +51,7 @@
         <p class="install-hint" data-i18n="installHint">可加入主畫面當 App 用</p>
       </div>
       <button type="button" class="hero-visual" id="featured-card" data-featured="chest-01">
-        <img id="featured-img" src="./public/cards/thumbs/chest-01-bench-press-cantonese.webp" alt="" width="640" height="960" />
+        <img id="featured-img" src="./public/cards/thumbs/chest-01-bench-press-cantonese.webp" alt="" width="640" height="960" decoding="async" fetchpriority="high" />
         <span class="hero-stamp">01</span>
         <span class="hero-visual-meta">
           <span id="featured-title"></span>
@@ -107,6 +105,7 @@
         <li><span class="note-index">03</span><span data-i18n="note3">深蹲／臥推等建議有保護架或同伴。</span></li>
         <li><span class="note-index">04</span><span data-i18n="note4">進階對應係常見進程，唔一定要同一日做晒。</span></li>
         <li><span class="note-index">05</span><span data-i18n="note5">步驟卡圖片以粵語為主；介面可切換繁中粵語／簡中／英文。</span></li>
+        <li><span class="note-index">06</span><span data-i18n="note6">重量區間未經合資格教練獨立審核；使用前請按器械、經驗同健康狀況調整。</span></li>
       </ol>
     </section>
   </main>

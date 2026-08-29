@@ -12,9 +12,9 @@
   --shadow-hover: 0 18px 36px oklch(0.22 0.03 50 / 0.12);
   --radius-ctl: 8px;
   --radius-sheet: 12px;
-  --font-display: "Big Shoulders Display", "Noto Sans HK", sans-serif;
-  --font-body: "Noto Sans HK", "Noto Sans SC", sans-serif;
-  --font-mono: "Red Hat Mono", ui-monospace, monospace;
+  --font-display: "Arial Narrow", "Avenir Next Condensed", "PingFang HK", sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "PingFang HK", "Noto Sans HK", "Microsoft JhengHei", sans-serif;
+  --font-mono: "SFMono-Regular", Menlo, Consolas, ui-monospace, monospace;
   --type-hero: clamp(2.15rem, 5.2vw, 3.35rem);
   --type-display: clamp(1.25rem, 2vw, 1.55rem);
   --type-card: 1.05rem;

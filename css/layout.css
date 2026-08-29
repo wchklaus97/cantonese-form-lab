@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-between;
   gap: var(--space-md);
-  padding: 0.7rem var(--gutter);
+  padding: 0.625rem var(--gutter);
   min-height: var(--header-h);
   position: sticky;
   top: 0;
@@ -21,6 +21,7 @@
   text-decoration: none;
   color: var(--ink);
   flex-shrink: 0;
+  min-height: 44px;
 }
 
 .brand-mark {
@@ -51,11 +52,16 @@
 }
 
 .nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   color: var(--muted);
   text-decoration: none;
   font-size: var(--type-ui);
   font-weight: 500;
-  padding: 0.35rem 0;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0;
   border-bottom: 1px solid transparent;
   transition: color var(--dur-ui) var(--ease-out), border-color var(--dur-ui) var(--ease-out);
 }
@@ -89,7 +95,7 @@
   font: inherit;
   font-size: 0.75rem;
   font-weight: 600;
-  min-height: 36px;
+  min-height: 44px;
   transition: background var(--dur-ui) var(--ease-out), color var(--dur-ui) var(--ease-out);
 }
 

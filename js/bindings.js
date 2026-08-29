@@ -185,9 +185,10 @@ export function consumeDeepLink() {
 
 export function registerPWA() {
   if (!("serviceWorker" in navigator)) return;
+  const hadController = Boolean(navigator.serviceWorker.controller);
   let reloadScheduled = false;
   navigator.serviceWorker.addEventListener("controllerchange", () => {
-    if (reloadScheduled) return;
+    if (!hadController || reloadScheduled) return;
     reloadScheduled = true;
     window.location.reload();
   });

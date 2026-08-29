@@ -1,4 +1,42 @@
-const CACHE = "form-lab-v30";
+const CACHE = "form-lab-v33";
+const THUMBNAILS = [
+  "./public/cards/thumbs/arms-01-dumbbell-curl-cantonese.webp",
+  "./public/cards/thumbs/arms-02-alternating-curl-cantonese.webp",
+  "./public/cards/thumbs/arms-03-seated-curl-cantonese.webp",
+  "./public/cards/thumbs/arms-04-triceps-kickback-cantonese.webp",
+  "./public/cards/thumbs/arms-05-bench-dip-cantonese.webp",
+  "./public/cards/thumbs/arms-06-overhead-extension-cantonese.webp",
+  "./public/cards/thumbs/back-01-wide-elbow-row-cantonese.webp",
+  "./public/cards/thumbs/back-02-bent-over-row-cantonese.webp",
+  "./public/cards/thumbs/back-03-one-arm-row-cantonese.webp",
+  "./public/cards/thumbs/back-04-close-elbow-row-cantonese.webp",
+  "./public/cards/thumbs/back-05-incline-row-cantonese.webp",
+  "./public/cards/thumbs/back-06-squeeze-row-cantonese.webp",
+  "./public/cards/thumbs/back-gold-01-lat-pulldown-cantonese.webp",
+  "./public/cards/thumbs/back-gold-02-seated-row-cantonese.webp",
+  "./public/cards/thumbs/back-gold-03-pullups-cantonese.webp",
+  "./public/cards/thumbs/back-gold-04-barbell-row-cantonese.webp",
+  "./public/cards/thumbs/back-gold-05-weighted-pullups-cantonese.webp",
+  "./public/cards/thumbs/back-gold-06-tbar-row-cantonese.webp",
+  "./public/cards/thumbs/chest-01-bench-press-cantonese.webp",
+  "./public/cards/thumbs/chest-02-incline-press-cantonese.webp",
+  "./public/cards/thumbs/chest-03-decline-press-cantonese.webp",
+  "./public/cards/thumbs/chest-04-floor-press-cantonese.webp",
+  "./public/cards/thumbs/chest-05-squeeze-press-cantonese.webp",
+  "./public/cards/thumbs/chest-06-pullover-cantonese.webp",
+  "./public/cards/thumbs/home-01-rdl-cantonese.webp",
+  "./public/cards/thumbs/home-02-glute-bridge-cantonese.webp",
+  "./public/cards/thumbs/home-03-seated-press-cantonese.webp",
+  "./public/cards/thumbs/home-04-chest-fly-cantonese.webp",
+  "./public/cards/thumbs/home-05-reverse-fly-cantonese.webp",
+  "./public/cards/thumbs/home-06-dead-bug-cantonese.webp",
+  "./public/cards/thumbs/thighs-01-leg-press-cantonese.webp",
+  "./public/cards/thumbs/thighs-02-leg-extension-cantonese.webp",
+  "./public/cards/thumbs/thighs-03-goblet-squat-cantonese.webp",
+  "./public/cards/thumbs/thighs-04-barbell-squat-cantonese.webp",
+  "./public/cards/thumbs/thighs-05-hack-squat-cantonese.webp",
+  "./public/cards/thumbs/thighs-06-bulgarian-split-squat-cantonese.webp",
+];
 const PRECACHE = [
   "./",
   "./index.html",
@@ -21,11 +59,18 @@ const PRECACHE = [
   "./js/constants.js",
   "./data/index.js",
   "./data/routines.js",
+  "./data/exercises/arms.js",
+  "./data/exercises/chest.js",
+  "./data/exercises/back.js",
+  "./data/exercises/thighs.js",
+  "./data/exercises/back-gold.js",
+  "./data/exercises/home.js",
   "./i18n.js",
   "./agent.js",
   "./manifest.webmanifest",
   "./public/icons/icon-192.png",
   "./public/icons/icon-512.png",
+  ...THUMBNAILS,
 ];
 
 function isAppShell(url) {
@@ -42,7 +87,10 @@ function isAppShell(url) {
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(CACHE).then((cache) => cache.addAll(PRECACHE)).then(() => self.skipWaiting())
+    caches
+      .open(CACHE)
+      .then((cache) => cache.addAll(PRECACHE.map((path) => new Request(path, { cache: "reload" }))))
+      .then(() => self.skipWaiting())
   );
 });
 
@@ -58,16 +106,19 @@ self.addEventListener("activate", (event) => {
 self.addEventListener("fetch", (event) => {
   const req = event.request;
   if (req.method !== "GET") return;
+  if (new URL(req.url).origin !== self.location.origin) return;
 
   if (isAppShell(req.url)) {
     event.respondWith(
-      fetch(req)
+      fetch(req, { cache: "no-cache" })
         .then((res) => {
-          const copy = res.clone();
-          caches.open(CACHE).then((cache) => cache.put(req, copy));
+          if (res.ok) {
+            const copy = res.clone();
+            caches.open(CACHE).then((cache) => cache.put(req, copy));
+          }
           return res;
         })
-        .catch(() => caches.match(req))
+        .catch(() => caches.match(req).then((cached) => cached || caches.match("./index.html")))
     );
     return;
   }
@@ -76,8 +127,10 @@ self.addEventListener("fetch", (event) => {
     caches.match(req).then((cached) => {
       const fetched = fetch(req)
         .then((res) => {
-          const copy = res.clone();
-          caches.open(CACHE).then((cache) => cache.put(req, copy));
+          if (res.ok) {
+            const copy = res.clone();
+            caches.open(CACHE).then((cache) => cache.put(req, copy));
+          }
           return res;
         })
         .catch(() => cached);

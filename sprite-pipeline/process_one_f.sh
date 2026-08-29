@@ -48,6 +48,6 @@ m=json.load(open("$outdir/pipeline-meta.json"))
 print("f/$name edge_touch:", m.get("edge_touch_frames"))
 PY
 
-# Frames are already 512x512 from the processor — stitch without re-scaling.
-python3 "$ASSEMBLE" --frames-dir "$outdir" --glob "idle-*.png" --output "$OUT/sheet-$name.png" --cell-size 512 --align feet --already-squared
+# Frames are already 512x512 from the processor; stitch without re-scaling.
+python3 "$ASSEMBLE" --frames-dir "$outdir" --glob "idle-*.png" --output "$OUT/sheet-$name.webp" --cell-size 512 --align feet --already-squared
 echo "OK f/$name"

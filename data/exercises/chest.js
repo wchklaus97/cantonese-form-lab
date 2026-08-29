@@ -2,12 +2,12 @@ export const exercises = [
   {
     "id": "chest-01",
     "group": "chest",
-    "image": "chest-01-bench-press-cantonese.png",
+    "image": "chest-01-bench-press-cantonese.webp",
     "minutes": 9,
     "setsReps": {
-      "yue": "3–4×8–12",
-      "zh": "3–4×8–12",
-      "en": "3–4×8–12"
+      "yue": "3-4×8-12",
+      "zh": "3-4×8-12",
+      "en": "3-4×8-12"
     },
     "name": {
       "yue": "平板臥推",
@@ -21,19 +21,19 @@ export const exercises = [
     },
     "kg": {
       "beginner": {
-        "yue": "12–16",
-        "zh": "12–16",
-        "en": "12–16"
+        "yue": "12-16",
+        "zh": "12-16",
+        "en": "12-16"
       },
       "intermediate": {
-        "yue": "18–24",
-        "zh": "18–24",
-        "en": "18–24"
+        "yue": "18-24",
+        "zh": "18-24",
+        "en": "18-24"
       },
       "advanced": {
-        "yue": "24–32",
-        "zh": "24–32",
-        "en": "24–32"
+        "yue": "24-32",
+        "zh": "24-32",
+        "en": "24-32"
       }
     },
     "advanced": {
@@ -52,12 +52,12 @@ export const exercises = [
   {
     "id": "chest-02",
     "group": "chest",
-    "image": "chest-02-incline-press-cantonese.png",
+    "image": "chest-02-incline-press-cantonese.webp",
     "minutes": 8,
     "setsReps": {
-      "yue": "3×8–12",
-      "zh": "3×8–12",
-      "en": "3×8–12"
+      "yue": "3×8-12",
+      "zh": "3×8-12",
+      "en": "3×8-12"
     },
     "name": {
       "yue": "上斜臥推",
@@ -71,19 +71,19 @@ export const exercises = [
     },
     "kg": {
       "beginner": {
-        "yue": "10–14",
-        "zh": "10–14",
-        "en": "10–14"
+        "yue": "10-14",
+        "zh": "10-14",
+        "en": "10-14"
       },
       "intermediate": {
-        "yue": "14–20",
-        "zh": "14–20",
-        "en": "14–20"
+        "yue": "14-20",
+        "zh": "14-20",
+        "en": "14-20"
       },
       "advanced": {
-        "yue": "20–28",
-        "zh": "20–28",
-        "en": "20–28"
+        "yue": "20-28",
+        "zh": "20-28",
+        "en": "20-28"
       }
     },
     "advanced": {
@@ -93,21 +93,21 @@ export const exercises = [
         "en": "Barbell Incline Press"
       },
       "note": {
-        "yue": "專注上胸厚度；凳角保持 30–45°。",
-        "zh": "专注上胸厚度；凳角保持 30–45°。",
-        "en": "Builds upper-chest thickness; keep 30–45° incline."
+        "yue": "專注上胸厚度；凳角保持 30-45°。",
+        "zh": "专注上胸厚度；凳角保持 30-45°。",
+        "en": "Builds upper-chest thickness; keep 30-45° incline."
       }
     }
   },
   {
     "id": "chest-03",
     "group": "chest",
-    "image": "chest-03-decline-press-cantonese.png",
+    "image": "chest-03-decline-press-cantonese.webp",
     "minutes": 8,
     "setsReps": {
-      "yue": "3×8–12",
-      "zh": "3×8–12",
-      "en": "3×8–12"
+      "yue": "3×8-12",
+      "zh": "3×8-12",
+      "en": "3×8-12"
     },
     "name": {
       "yue": "下斜臥推",
@@ -121,19 +121,19 @@ export const exercises = [
     },
     "kg": {
       "beginner": {
-        "yue": "12–16",
-        "zh": "12–16",
-        "en": "12–16"
+        "yue": "12-16",
+        "zh": "12-16",
+        "en": "12-16"
       },
       "intermediate": {
-        "yue": "16–22",
-        "zh": "16–22",
-        "en": "16–22"
+        "yue": "16-22",
+        "zh": "16-22",
+        "en": "16-22"
       },
       "advanced": {
-        "yue": "22–30",
-        "zh": "22–30",
-        "en": "22–30"
+        "yue": "22-30",
+        "zh": "22-30",
+        "en": "22-30"
       }
     },
     "advanced": {
@@ -152,12 +152,12 @@ export const exercises = [
   {
     "id": "chest-04",
     "group": "chest",
-    "image": "chest-04-floor-press-cantonese.png",
+    "image": "chest-04-floor-press-cantonese.webp",
     "minutes": 7,
     "setsReps": {
-      "yue": "3×8–12",
-      "zh": "3×8–12",
-      "en": "3×8–12"
+      "yue": "3×8-12",
+      "zh": "3×8-12",
+      "en": "3×8-12"
     },
     "name": {
       "yue": "地板臥推",
@@ -171,19 +171,19 @@ export const exercises = [
     },
     "kg": {
       "beginner": {
-        "yue": "12–16",
-        "zh": "12–16",
-        "en": "12–16"
+        "yue": "12-16",
+        "zh": "12-16",
+        "en": "12-16"
       },
       "intermediate": {
-        "yue": "16–22",
-        "zh": "16–22",
-        "en": "16–22"
+        "yue": "16-22",
+        "zh": "16-22",
+        "en": "16-22"
       },
       "advanced": {
-        "yue": "22–28",
-        "zh": "22–28",
-        "en": "22–28"
+        "yue": "22-28",
+        "zh": "22-28",
+        "en": "22-28"
       }
     },
     "advanced": {
@@ -202,12 +202,12 @@ export const exercises = [
   {
     "id": "chest-05",
     "group": "chest",
-    "image": "chest-05-squeeze-press-cantonese.png",
+    "image": "chest-05-squeeze-press-cantonese.webp",
     "minutes": 7,
     "setsReps": {
-      "yue": "3×10–15",
-      "zh": "3×10–15",
-      "en": "3×10–15"
+      "yue": "3×10-15",
+      "zh": "3×10-15",
+      "en": "3×10-15"
     },
     "name": {
       "yue": "夾胸推舉",
@@ -221,19 +221,19 @@ export const exercises = [
     },
     "kg": {
       "beginner": {
-        "yue": "8–12",
-        "zh": "8–12",
-        "en": "8–12"
+        "yue": "8-12",
+        "zh": "8-12",
+        "en": "8-12"
       },
       "intermediate": {
-        "yue": "12–16",
-        "zh": "12–16",
-        "en": "12–16"
+        "yue": "12-16",
+        "zh": "12-16",
+        "en": "12-16"
       },
       "advanced": {
-        "yue": "16–22",
-        "zh": "16–22",
-        "en": "16–22"
+        "yue": "16-22",
+        "zh": "16-22",
+        "en": "16-22"
       }
     },
     "advanced": {
@@ -252,12 +252,12 @@ export const exercises = [
   {
     "id": "chest-06",
     "group": "chest",
-    "image": "chest-06-pullover-cantonese.png",
+    "image": "chest-06-pullover-cantonese.webp",
     "minutes": 7,
     "setsReps": {
-      "yue": "3×10–12",
-      "zh": "3×10–12",
-      "en": "3×10–12"
+      "yue": "3×10-12",
+      "zh": "3×10-12",
+      "en": "3×10-12"
     },
     "name": {
       "yue": "啞鈴過頭拉伸",
@@ -271,19 +271,19 @@ export const exercises = [
     },
     "kg": {
       "beginner": {
-        "yue": "12–16",
-        "zh": "12–16",
-        "en": "12–16"
+        "yue": "12-16",
+        "zh": "12-16",
+        "en": "12-16"
       },
       "intermediate": {
-        "yue": "16–22",
-        "zh": "16–22",
-        "en": "16–22"
+        "yue": "16-22",
+        "zh": "16-22",
+        "en": "16-22"
       },
       "advanced": {
-        "yue": "22–30",
-        "zh": "22–30",
-        "en": "22–30"
+        "yue": "22-30",
+        "zh": "22-30",
+        "en": "22-30"
       }
     },
     "advanced": {
